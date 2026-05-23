@@ -1609,3 +1609,220 @@ select.form-input option {
   }
 }
 
+/* ========================================
+   Developer & Trust Section (ACF Ingeniería)
+   ======================================== */
+.developer-section {
+  background-color: var(--color-background);
+}
+
+.developer-inner {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 4rem;
+  box-shadow: 0 25px 60px rgba(25, 47, 34, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.developer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .developer-grid {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 5rem;
+  }
+}
+
+.developer-brand-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.developer-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.2vw, 2.8rem);
+  font-weight: 300;
+  color: var(--color-primary);
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+
+.developer-subtitle {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.developer-lead-text {
+  font-size: 1.02rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: rgba(30, 37, 32, 0.72);
+  margin-bottom: 2.5rem;
+}
+
+.developer-stats-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.developer-stat-box {
+  flex: 1;
+  min-width: 140px;
+  background: rgba(243, 239, 233, 0.35);
+  border: 1px solid var(--color-border);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.dev-stat-num {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: var(--color-primary);
+  line-height: 1.1;
+  margin-bottom: 0.4rem;
+}
+
+.dev-stat-lbl {
+  display: block;
+  font-size: 0.68rem;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(30, 37, 32, 0.55);
+  font-weight: 500;
+}
+
+.developer-trust-pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.trust-pillars-header {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.trust-pillar-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.trust-icon-wrapper {
+  font-size: 1.5rem;
+  background: rgba(212, 184, 149, 0.12);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(212, 184, 149, 0.25);
+}
+
+.trust-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.trust-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.trust-desc {
+  font-size: 0.88rem;
+  font-weight: 300;
+  line-height: 1.65;
+  color: rgba(30, 37, 32, 0.65);
+}
+
+/* Responsive Overrides (Samsung S8+, etc.) */
+@media (max-width: 480px) {
+  .developer-inner {
+    padding: 2rem 1.25rem !important;
+  }
+  
+  .developer-grid {
+    gap: 3rem !important;
+  }
+  
+  .developer-subtitle {
+    font-size: 0.85rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .developer-lead-text {
+    font-size: 0.92rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .developer-stats-row {
+    gap: 1rem !important;
+  }
+  
+  .developer-stat-box {
+    padding: 1rem !important;
+  }
+  
+  .dev-stat-num {
+    font-size: 1.8rem !important;
+  }
+  
+  .developer-trust-pillars {
+    gap: 1.75rem !important;
+  }
+  
+  .trust-pillars-header {
+    font-size: 0.95rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+  
+  .trust-pillar-item {
+    gap: 1rem !important;
+  }
+  
+  .trust-icon-wrapper {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 1.2rem !important;
+  }
+  
+  .trust-title {
+    font-size: 0.92rem !important;
+  }
+  
+  .trust-desc {
+    font-size: 0.82rem !important;
+    line-height: 1.55 !important;
+  }
+}
+

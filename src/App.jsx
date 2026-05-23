@@ -10,6 +10,7 @@ import Amenities from './components/Amenities';
 import Gallery from './components/Gallery';
 import Location from './components/Location';
 import FAQ from './components/FAQ';
+import DeveloperBrand from './components/DeveloperBrand';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -173,6 +174,7 @@ function App() {
       <Gallery />
       <Location />
       <FAQ />
+      <DeveloperBrand />
       <Footer />
     </>
   );
