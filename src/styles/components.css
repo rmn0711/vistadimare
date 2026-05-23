@@ -1610,228 +1610,227 @@ select.form-input option {
 }
 
 /* ========================================
-   Developer & Trust Section (Constructora ACF)
+   Developer & Trust Section (ACF S.A.S.)
    ======================================== */
 .developer-section {
   background-color: var(--color-background);
-  color: var(--color-primary);
-  border-top: 1px solid var(--color-border);
+  color: var(--color-text-light);
 }
 
-.developer-grid-editorial {
-  padding: 4.5rem;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  box-shadow: 0 30px 80px rgba(25, 47, 34, 0.03);
+.developer-editorial-card {
+  background-color: #121E17; /* Verde Bosque Profundo / Carbón */
+  border: 1px solid rgba(212, 184, 149, 0.25); /* Borde Champán */
+  padding: 5rem 4.5rem;
+  box-shadow: 0 30px 70px rgba(10, 18, 13, 0.2);
   position: relative;
 }
 
-.developer-header-editorial {
-  margin-bottom: 3.5rem;
-}
-
-.developer-tagline {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.3em;
-  color: var(--color-accent);
-  margin-bottom: 1rem;
-}
-
-.developer-main-title {
-  font-family: var(--font-heading);
-  font-size: clamp(2.2rem, 3.8vw, 3.2rem);
-  font-weight: 300;
-  line-height: 1.12;
-  color: var(--color-primary);
-  margin: 0;
-}
-
-.developer-main-title em {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-weight: 300;
-  color: var(--color-secondary-dark);
-}
-
-.developer-divider-line {
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(to right, var(--color-secondary) 0%, rgba(25, 47, 34, 0.05) 100%);
-  margin-top: 2rem;
-}
-
-.developer-body-grid {
+.developer-card-inner {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 4rem;
+  gap: 4.5rem;
   align-items: start;
 }
 
 @media (min-width: 992px) {
-  .developer-body-grid {
-    grid-template-columns: 1.1fr 1.2fr;
-    gap: 6rem;
+  .developer-card-inner {
+    grid-template-columns: 260px 1fr;
+    gap: 5.5rem;
   }
 }
 
-.developer-manifesto-col {
+.developer-seal-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.developer-logo-badge {
+  background: #FFFFFF;
+  padding: 1.5rem 2rem;
+  border: 1px solid rgba(212, 184, 149, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 240px;
+}
+
+.acf-badge-logo {
+  height: 75px;
+  width: auto;
+  object-fit: contain;
+}
+
+.developer-badge-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.developer-badge-title {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+}
+
+.developer-badge-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(253, 251, 247, 0.45);
+}
+
+.developer-editorial-content {
   display: flex;
   flex-direction: column;
 }
 
-.developer-logo-frame {
-  margin-bottom: 2rem;
+.editorial-label {
   display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  color: var(--color-accent);
+  margin-bottom: 1.25rem;
 }
 
-.developer-acf-logo-premium {
-  height: 80px;
-  width: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 6px 15px rgba(25, 47, 34, 0.06));
+.editorial-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 300;
+  line-height: 1.15;
+  color: var(--color-text-light);
+  margin-bottom: 1.75rem;
 }
 
-.developer-narrative {
+.editorial-title em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--color-secondary);
+}
+
+.editorial-lead {
   font-size: 1.05rem;
   font-weight: 300;
   line-height: 1.85;
-  color: rgba(30, 37, 32, 0.75);
-  margin-bottom: 1.5rem;
+  color: rgba(253, 251, 247, 0.8);
+  margin-bottom: 0;
 }
 
-.developer-narrative strong {
+.editorial-lead strong {
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
-.developer-narrative-sub {
-  font-size: 0.95rem;
-  font-weight: 300;
-  line-height: 1.75;
-  color: rgba(30, 37, 32, 0.58);
-}
-
-.developer-trust-col {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-
-.trust-editorial-item {
+.editorial-values-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px dashed rgba(25, 47, 34, 0.1);
+  gap: 3rem;
+  margin-top: 3.5rem;
+  border-top: 1px solid rgba(253, 251, 247, 0.1);
+  padding-top: 3rem;
 }
 
-@media (min-width: 600px) {
-  .trust-editorial-item {
-    grid-template-columns: 140px 1fr;
+@media (min-width: 768px) {
+  .editorial-values-grid {
+    grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
   }
 }
 
-.trust-editorial-item:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.trust-meta {
+.value-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
-.trust-number {
+.value-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.value-number {
   font-family: var(--font-serif);
-  font-size: 2.4rem;
-  color: var(--color-secondary-dark);
-  line-height: 1;
+  font-size: 1.35rem;
+  color: var(--color-secondary);
   font-weight: 400;
+  opacity: 0.95;
 }
 
-.trust-label {
-  font-family: var(--font-body);
-  font-size: 0.6rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: rgba(30, 37, 32, 0.45);
-  margin-top: 0.5rem;
-  font-weight: 600;
-}
-
-.trust-details-box {
-  display: flex;
-  flex-direction: column;
-}
-
-.trust-headline {
+.value-title {
   font-family: var(--font-heading);
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--color-primary);
-  margin-bottom: 0.5rem;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-.trust-paragraph {
-  font-size: 0.88rem;
+.value-desc {
+  font-size: 0.85rem;
   font-weight: 300;
-  line-height: 1.65;
-  color: rgba(30, 37, 32, 0.62);
+  line-height: 1.6;
+  color: rgba(253, 251, 247, 0.55);
   margin: 0;
 }
 
 /* Responsive Overrides (Samsung S8+, etc.) */
 @media (max-width: 767px) {
-  .developer-grid-editorial {
-    padding: 2.5rem 1.5rem !important;
+  .developer-editorial-card {
+    padding: 3rem 1.5rem !important;
   }
   
-  .developer-header-editorial {
-    margin-bottom: 2.5rem !important;
+  .developer-card-inner {
+    gap: 3rem !important;
   }
   
-  .developer-main-title {
+  .developer-logo-badge {
+    padding: 1rem 1.5rem !important;
+    max-width: 180px !important;
+  }
+  
+  .acf-badge-logo {
+    height: 55px !important;
+  }
+  
+  .editorial-title {
     font-size: 1.85rem !important;
   }
   
-  .developer-acf-logo-premium {
-    height: 64px !important;
-  }
-  
-  .developer-narrative {
+  .editorial-lead {
     font-size: 0.98rem !important;
     line-height: 1.7 !important;
   }
   
-  .developer-narrative-sub {
-    font-size: 0.88rem !important;
-  }
-  
-  .developer-trust-col {
+  .editorial-values-grid {
+    margin-top: 2.5rem !important;
+    padding-top: 2.5rem !important;
     gap: 2rem !important;
   }
   
-  .trust-editorial-item {
-    gap: 1rem !important;
-    padding-bottom: 1.5rem !important;
+  .value-header {
+    margin-bottom: 0.5rem !important;
   }
   
-  .trust-number {
-    font-size: 2rem !important;
+  .value-title {
+    font-size: 0.88rem !important;
   }
   
-  .trust-headline {
-    font-size: 0.98rem !important;
-  }
-  
-  .trust-paragraph {
-    font-size: 0.82rem !important;
-    line-height: 1.55 !important;
+  .value-desc {
+    font-size: 0.8rem !important;
+    line-height: 1.5 !important;
   }
 }
 
