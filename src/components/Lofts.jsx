@@ -6,16 +6,16 @@ const loftsData = [
     size: '36.50 m²',
     img: '/images/enhanced-image (34).png',
     tag: 'Mayor Espacio',
-    feature: 'Espectacular loft con distribución optimizada para estancias prolongadas o viajes familiares. Cuenta con un amplio balcón panorámico y excelentes acabados.',
-    meta: ['Loft Premium', 'Terraza Privada', 'Airbnb Ready'],
+    feature: 'Espectacular loft con distribución optimizada para estancias prolongadas o viajes familiares. Cuenta con imponentes ventanales de piso a techo y acabados de ultra-lujo.',
+    meta: ['Loft Premium', 'Ventanales Panorámicos', 'Airbnb Ready'],
   },
   {
     type: 'Loft Tipo 5',
     size: '25.89 m²',
     img: '/images/enhanced-image (24).png',
     tag: 'Alta Ocupación',
-    feature: 'Eficiente diseño que maximiza cada rincón para confort del huésped. Su balcón privado y cocina integrada lo convierten en la opción preferida de nómadas digitales.',
-    meta: ['Loft Premium', 'Terraza Privada', 'Airbnb Ready'],
+    feature: 'Eficiente diseño que maximiza cada rincón para el absoluto confort del huésped. Sus ventanales panorámicos y cocina integrada lo convierten en la opción preferida de nómadas digitales.',
+    meta: ['Loft Premium', 'Ventanales Panorámicos', 'Airbnb Ready'],
   },
   {
     type: 'Loft Tipo 7',
@@ -23,7 +23,7 @@ const loftsData = [
     img: '/images/enhanced-image (52).png',
     tag: 'Mejor ROI',
     feature: 'La distribución inteligente definitiva. Diseñado con precisión geométrica para optimizar costos de adquisición y maximizar el rendimiento por metro cuadrado.',
-    meta: ['Loft Premium', 'Terraza Privada', 'Airbnb Ready'],
+    meta: ['Loft Premium', 'Optimización Espacial', 'Airbnb Ready'],
   },
   {
     type: 'Loft Tipo 10',
@@ -31,7 +31,7 @@ const loftsData = [
     img: '/images/enhanced-image (54).png',
     tag: 'Posición Exclusiva',
     feature: 'Estratégicamente ubicado en planta para mayor privacidad y flujo rápido hacia las áreas de esparcimiento del edificio. Excelentes visuales y confort premium.',
-    meta: ['Loft Premium', 'Terraza Privada', 'Airbnb Ready'],
+    meta: ['Loft Premium', 'Vista Exterior', 'Airbnb Ready'],
   },
 ];
 
@@ -61,7 +61,7 @@ const Lofts = () => {
               className="manifesto-text text-reveal-item delay-2"
               style={{ color: 'var(--color-text-dark)' }}
             >
-              Solo <strong>7 unidades por planta</strong>, con metrajes que oscilan entre <strong>21 m²</strong> y <strong>36.5 m²</strong>. Cada loft cuenta con balcón o terraza social privada, ventanales termo-acústicos y excelentes acabados ideales para el mercado turístico internacional.
+              Solo <strong>7 unidades por planta</strong>, con metrajes que oscilan entre <strong>21 m²</strong> y <strong>36.5 m²</strong>. Cada loft cuenta con imponentes ventanales termo-acústicos de piso a techo que bañan de luz natural el espacio, climatización eficiente y acabados de lujo ideales para el mercado de rentas cortas.
             </p>
           </div>
         </div>
