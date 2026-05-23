@@ -10,13 +10,16 @@ const DeveloperBrand = () => {
             
             {/* Lado Izquierdo — Sello de Confianza y Logo */}
             <div className="developer-seal-block">
-              <div className="developer-logo-badge">
-                <img 
-                  src="/images/acf-logo.png" 
-                  alt="ACF S.A.S. Logo" 
-                  className="acf-badge-logo"
-                />
-              </div>
+              <img 
+                src="/images/acf-logo.png" 
+                alt="ACF S.A.S." 
+                style={{
+                  height: '90px',
+                  width: 'auto',
+                  objectFit: 'contain',
+                  marginBottom: '1.5rem'
+                }}
+              />
               <div className="developer-badge-text">
                 <span className="developer-badge-title">ACF S.A.S.</span>
                 <span className="developer-badge-subtitle">Desarrollador & Comercializador</span>
