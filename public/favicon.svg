@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Outer border circle -->
+  <circle cx="256" cy="256" r="240" stroke="#D4B895" stroke-width="6" opacity="0.3"/>
+  
+  <!-- Subtle inner ring -->
+  <circle cx="256" cy="256" r="90" stroke="#D4B895" stroke-width="2" stroke-dasharray="8 6" opacity="0.5"/>
+  
+  <!-- Gold Sunburst Rays -->
+  <!-- 1. North Ray -->
+  <path d="M256 60 L276 210 L256 256 L236 210 Z" fill="#D4B895"/>
+  <path d="M256 60 L256 256 L236 210 Z" fill="#B59873" opacity="0.8"/>
+  
+  <!-- 2. South Ray -->
+  <path d="M256 452 L236 302 L256 256 L276 302 Z" fill="#D4B895"/>
+  <path d="M256 452 L256 256 L276 302 Z" fill="#B59873" opacity="0.8"/>
+  
+  <!-- 3. East Ray -->
+  <path d="M452 256 L302 276 L256 256 L302 236 Z" fill="#D4B895"/>
+  <path d="M452 256 L256 256 L302 236 Z" fill="#B59873" opacity="0.8"/>
+  
+  <!-- 4. West Ray -->
+  <path d="M60 256 L210 236 L256 256 L210 276 Z" fill="#D4B895"/>
+  <path d="M60 256 L256 256 L210 276 Z" fill="#B59873" opacity="0.8"/>
+  
+  <!-- Diagonal Rays -->
+  <!-- 5. NE Ray -->
+  <path d="M394 118 L308 224 L256 256 L288 190 Z" fill="#C87B57"/>
+  <path d="M394 118 L256 256 L288 190 Z" fill="#A05A38" opacity="0.8"/>
+  
+  <!-- 6. SW Ray -->
+  <path d="M118 394 L204 288 L256 256 L224 322 Z" fill="#C87B57"/>
+  <path d="M118 394 L256 256 L224 322 Z" fill="#A05A38" opacity="0.8"/>
+  
+  <!-- 7. SE Ray -->
+  <path d="M394 394 L288 322 L256 256 L322 288 Z" fill="#C87B57"/>
+  <path d="M394 394 L256 256 L322 288 Z" fill="#A05A38" opacity="0.8"/>
+  
+  <!-- 8. NW Ray -->
+  <path d="M118 118 L224 190 L256 256 L190 224 Z" fill="#C87B57"/>
+  <path d="M118 118 L256 256 L190 224 Z" fill="#A05A38" opacity="0.8"/>
+  
+  <!-- Center Core -->
+  <circle cx="256" cy="256" r="48" fill="#192F22" stroke="#D4B895" stroke-width="4"/>
+  <circle cx="256" cy="256" r="28" fill="#D4B895"/>
+  <circle cx="256" cy="256" r="12" fill="#FAF8F5"/>
+</svg>
