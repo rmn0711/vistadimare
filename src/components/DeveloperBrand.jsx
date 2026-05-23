@@ -5,80 +5,84 @@ const DeveloperBrand = () => {
   return (
     <section id="desarrollador" className="developer-section section-padding">
       <div className="container">
-        <div className="developer-inner reveal-mask">
-          <div className="developer-grid">
-            {/* Lado Izquierdo — Identidad y Misión */}
-            <div className="developer-brand-card">
-              <span className="section-label">RESPALDO Y GARANTÍA</span>
-              <div className="developer-logo-container" style={{ margin: '1.5rem 0 2rem' }}>
+        <div className="developer-grid-editorial reveal-mask">
+          
+          {/* Fila Superior — Encabezado Editorial */}
+          <div className="developer-header-editorial">
+            <span className="developer-tagline">DISEÑO · PRESTIGIO · SOLIDEZ</span>
+            <h2 className="developer-main-title">
+              Dieciocho Años <br />
+              <em>Modelando el Futuro Inmobiliario</em>
+            </h2>
+            <div className="developer-divider-line" />
+          </div>
+
+          {/* Fila Inferior — Contenido Asimétrico */}
+          <div className="developer-body-grid">
+            
+            {/* Columna Izquierda — El Manifiesto de ACF */}
+            <div className="developer-manifesto-col">
+              <div className="developer-logo-frame">
                 <img 
                   src="/images/acf-logo.png" 
-                  alt="ACF Ingeniería Logo" 
-                  className="developer-acf-logo" 
-                  style={{
-                    height: '90px',
-                    width: 'auto',
-                    objectFit: 'contain',
-                    filter: 'drop-shadow(0 4px 10px rgba(25, 47, 34, 0.08))'
-                  }}
+                  alt="Constructora ACF" 
+                  className="developer-acf-logo-premium"
                 />
               </div>
-              <h2 className="developer-title">
-                ACF Ingeniería
-              </h2>
-              <p className="developer-subtitle">
-                Desarrolladora y Comercializadora de Vista Di Mare
+              <p className="developer-narrative">
+                Como firma **desarrolladora y comercializadora exclusiva** de Vista Di Mare, **Constructora ACF** aporta un legado intachable de más de 18 años en el Caribe colombiano. Nuestra filosofía fusiona el rigor de la ingeniería estructural con diseños contemporáneos de vanguardia, garantizando que cada loft sea una obra maestra de plusvalía y confort.
               </p>
-              <p className="developer-lead-text">
-                En <strong>ACF Ingeniería</strong>, transformamos visiones en realidades estructurales de alta gama. Como desarrolladores y comercializadores exclusivos de Vista Di Mare, consolidamos un compromiso inquebrantable con la excelencia técnica, la transparencia legal y la satisfacción de nuestros inversores en el Caribe colombiano.
+              <p className="developer-narrative-sub">
+                Cada etapa del proyecto, desde la cimentación sismorresistente hasta las terminaciones expuestas al entorno salino, se ejecuta bajo estrictos controles de calidad y auditoría fiduciaria para tu absoluta tranquilidad financiera.
               </p>
-              <div className="developer-stats-row">
-                <div className="developer-stat-box">
-                  <span className="dev-stat-num">100%</span>
-                  <span className="dev-stat-lbl">Cumplimiento Técnico</span>
-                </div>
-                <div className="developer-stat-box">
-                  <span className="dev-stat-num">Premium</span>
-                  <span className="dev-stat-lbl">Calidad de Materiales</span>
-                </div>
-              </div>
             </div>
 
-            {/* Lado Derecho — Pilares de Confianza */}
-            <div className="developer-trust-pillars">
-              <h3 className="trust-pillars-header">¿Por qué invertir con ACF Ingeniería?</h3>
+            {/* Columna Derecha — Las Métricas de Confianza Inmobiliaria */}
+            <div className="developer-trust-col">
               
-              <div className="trust-pillar-item">
-                <div className="trust-icon-wrapper">🛡️</div>
-                <div className="trust-content">
-                  <h4 className="trust-title">Transparencia y Seguridad Jurídica</h4>
-                  <p className="trust-desc">
-                    Respaldamos tu inversión bajo rigurosos esquemas legales y fiduciarios. El proyecto se estructura con total claridad contractual en escrituras públicas, garantizando que tu LOFT sea un activo familiar seguro desde el primer día.
+              <div className="trust-editorial-item">
+                <div className="trust-meta">
+                  <span className="trust-number">18+</span>
+                  <span className="trust-label">AÑOS DE HISTORIA</span>
+                </div>
+                <div className="trust-details-box">
+                  <h4 className="trust-headline">Trayectoria Consolidada</h4>
+                  <p className="trust-paragraph">
+                    Dieciocho años desarrollando, construyendo y comercializando con éxito hitos residenciales en el Caribe, garantizando plusvalía sostenible y cumplimiento de cronogramas.
                   </p>
                 </div>
               </div>
 
-              <div className="trust-pillar-item">
-                <div className="trust-icon-wrapper">🏗️</div>
-                <div className="trust-content">
-                  <h4 className="trust-title">Ingeniería de Precisión y Cumplimiento</h4>
-                  <p className="trust-desc">
-                    Nuestra metodología técnica asegura el cumplimiento riguroso de los cronogramas de obra. Diseñamos con especificaciones sismorresistentes avanzadas y cimentación de alta ingeniería para resistir las condiciones del entorno marino.
+              <div className="trust-editorial-item">
+                <div className="trust-meta">
+                  <span className="trust-number">100%</span>
+                  <span className="trust-label">RIGOR TÉCNICO</span>
+                </div>
+                <div className="trust-details-box">
+                  <h4 className="trust-headline">Ingeniería Sismorresistente</h4>
+                  <p className="trust-paragraph">
+                    Precisión milimétrica en la cimentación y estructuras calculadas con especificaciones antisísmicas avanzadas, diseñadas para perdurar en entornos marinos exigentes.
                   </p>
                 </div>
               </div>
 
-              <div className="trust-pillar-item">
-                <div className="trust-icon-wrapper">✨</div>
-                <div className="trust-content">
-                  <h4 className="trust-title">Diseño Sostenible y Alta Valorización</h4>
-                  <p className="trust-desc">
-                    Fusionamos arquitectura contemporánea de vanguardia con eficiencia energética y térmica. Esto no solo preserva el ecosistema de Puerto Colombia, sino que optimiza los costos operativos de mantenimiento y maximiza la plusvalía de tu loft.
+              <div className="trust-editorial-item">
+                <div className="trust-meta">
+                  <span className="trust-number">Fiducia</span>
+                  <span className="trust-label">CONTROL DE RECURSOS</span>
+                </div>
+                <div className="trust-details-box">
+                  <h4 className="trust-headline">Seguridad y Transparencia Legal</h4>
+                  <p className="trust-paragraph">
+                    Gestión fiduciaria de recursos y estructuración clara en escrituras públicas, ofreciendo un entorno de inversión transparente, seguro y libre de riesgos.
                   </p>
                 </div>
               </div>
+
             </div>
+
           </div>
+
         </div>
       </div>
     </section>
